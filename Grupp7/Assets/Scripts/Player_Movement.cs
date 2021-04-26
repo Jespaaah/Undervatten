@@ -10,6 +10,7 @@ public class Player_Movement : MonoBehaviour
     public Rigidbody rb;
     public Vector3 dir;
     public LayerMask move;
+    public GameObject scoremanager;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -39,6 +40,6 @@ public class Player_Movement : MonoBehaviour
         Vector3 realDir = new Vector3(dir.x,dir.y,0);
        transform.rotation = Quaternion.LookRotation(realDir);
 
-        rb.AddForce(realDir * speed * Time.fixedDeltaTime,ForceMode.VelocityChange);
+        rb.AddForce(realDir * scoremanager.GetComponent<ScoreManager>().currentSpeed * Time.fixedDeltaTime, ForceMode.VelocityChange);
     }
 }
