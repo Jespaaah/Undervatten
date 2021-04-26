@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
 
 public class ScoreManager : MonoBehaviour
 {
@@ -8,6 +11,8 @@ public class ScoreManager : MonoBehaviour
     public int ThresholdScore;
     public bool small, medium, big;
     public GameObject player;
+    public TextMeshProUGUI text;
+    public AudioSource audioSource;
     [Header("Small")]
     public float smallSpeed;
     public float smallSize;
@@ -36,6 +41,8 @@ public class ScoreManager : MonoBehaviour
     {
         ThresholdScore = score + ThresholdScore;
         small = true;
+        text = GetComponent<TextMeshProUGUI>();
+        audioSource = GetComponent<AudioSource>();
         LevelUp();
     }
 
@@ -68,6 +75,11 @@ public class ScoreManager : MonoBehaviour
         currentSize = GetSize();
         currentText = GetText();
         currentNarration = GetNarration();
+
+        player.transform.localScale = new Vector3(currentSize,currentSize,currentSize);
+        text.text = currentText;
+        audioSource.clip = currentNarration;
+        audioSource.Play();
     }
     public void IncreaseScore() 
     {
