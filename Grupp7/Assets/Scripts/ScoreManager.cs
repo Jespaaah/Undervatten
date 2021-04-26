@@ -10,7 +10,10 @@ public class ScoreManager : MonoBehaviour
     public int score = 0;
     public int ThresholdScore;
     public bool small, medium, big;
+    public int currentLevel = 0;
+    public int maxLevel;
     public GameObject player;
+    public GameObject textfield;
     public TextMeshProUGUI text;
     public AudioSource audioSource;
     [Header("Small")]
@@ -39,33 +42,25 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
+      
         ThresholdScore = score + ThresholdScore;
         small = true;
-        text = GetComponent<TextMeshProUGUI>();
+        text = textfield.GetComponent<TextMeshProUGUI>();
         audioSource = GetComponent<AudioSource>();
         LevelUp();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
     public void CheckScore()
     {
-        if(score == ThresholdScore)
+        
+        if(score == ThresholdScore && currentLevel != maxLevel)
         {
             ThresholdScore = score + ThresholdScore;
             Debug.Log("You became bigger");
-            if (small && !big)
-            {
-                medium = true;
-                small = false;
-            }
-            if (!small && !big)
-            {
-                big = true;
-            }
+            currentLevel += 1;
+            if (currentLevel == 1) { small = false; medium = true; }
+            if (currentLevel == 2) { medium = false; big = true; }
+            
             LevelUp();
         }
     }
@@ -77,7 +72,7 @@ public class ScoreManager : MonoBehaviour
         currentNarration = GetNarration();
 
         player.transform.localScale = new Vector3(currentSize,currentSize,currentSize);
-        text.text = currentText;
+        text.text = currentText.ToString();
         audioSource.clip = currentNarration;
         audioSource.Play();
     }
