@@ -19,7 +19,7 @@ public class Player_Movement : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit, move))
+        if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit,100, move))
         {
             Debug.Log("Background hit");
             
