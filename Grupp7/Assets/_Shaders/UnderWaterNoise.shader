@@ -1,4 +1,4 @@
-Shader "PeerPlay/UnderWaterNoise"
+Shader "Hidden/UnderWaterNoise"
 {
     Properties
     {
