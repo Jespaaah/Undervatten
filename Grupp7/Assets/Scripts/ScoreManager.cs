@@ -1,13 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
 
 public class ScoreManager : MonoBehaviour
 {
     public int score = 0;
     public int ThresholdScore;
     public bool small, medium, big;
-    public GameObject player;
+    public int currentLevel = 0;
+    public int maxLevel;
+    public GameObject player,cam;
+    public GameObject textfield;
+    public TextMeshProUGUI text;
+    public AudioSource audioSource;
     [Header("Small")]
     public float smallSpeed;
     public float smallSize;
@@ -36,29 +44,22 @@ public class ScoreManager : MonoBehaviour
     {
         ThresholdScore = score + ThresholdScore;
         small = true;
+        text = textfield.GetComponent<TextMeshProUGUI>();
+        audioSource = GetComponent<AudioSource>();
         LevelUp();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
     public void CheckScore()
     {
-        if(score == ThresholdScore)
+        
+        if(score == ThresholdScore && currentLevel != maxLevel)
         {
             ThresholdScore = score + ThresholdScore;
             Debug.Log("You became bigger");
-            if (small && !big)
-            {
-                medium = true;
-                small = false;
-            }
-            if (!small && !big)
-            {
-                big = true;
-            }
+            currentLevel += 1;
+            if (currentLevel == 1) { small = false; medium = true; }
+            if (currentLevel == 2) { medium = false; big = true; }
+            
             LevelUp();
         }
     }
@@ -68,6 +69,12 @@ public class ScoreManager : MonoBehaviour
         currentSize = GetSize();
         currentText = GetText();
         currentNarration = GetNarration();
+
+        player.transform.localScale = new Vector3(currentSize,currentSize,currentSize);
+        text.text = currentText.ToString();
+        audioSource.clip = currentNarration;
+        audioSource.Play();
+        cam.GetComponent<Camera_Movement>().ZoomOut();
     }
     public void IncreaseScore() 
     {

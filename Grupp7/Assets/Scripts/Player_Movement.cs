@@ -11,6 +11,7 @@ public class Player_Movement : MonoBehaviour
     public Vector3 dir;
     public LayerMask move;
     public GameObject scoremanager;
+    public bool swim = false;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -20,20 +21,28 @@ public class Player_Movement : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit,100, move))
+        if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit,100000, move,QueryTriggerInteraction.Collide))
         {
-            Debug.Log("Background hit");
-            
-
-            dir = hit.point - transform.position;
-            dir.Normalize();
-            
+            if (hit.collider.tag == "noMove")
+            {
+                swim = false;
+            }
+            else
+            {
+                Debug.Log("Background hit");
+                Debug.Log(hit.collider.gameObject.name);
+                dir = hit.point - transform.position;
+                dir.Normalize();
+                swim = true;
+            }
+           
             //transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * speed);
         }
+        else { swim = false; }
     }
     private void FixedUpdate()
     {
-        Move(dir);
+        if (swim){Move(dir);}
     }
     public void Move(Vector3 dir)
     {
