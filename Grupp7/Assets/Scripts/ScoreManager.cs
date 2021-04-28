@@ -12,7 +12,7 @@ public class ScoreManager : MonoBehaviour
     public bool small, medium, big;
     public int currentLevel = 0;
     public int maxLevel;
-    public GameObject player;
+    public GameObject player,cam;
     public GameObject textfield;
     public TextMeshProUGUI text;
     public AudioSource audioSource;
@@ -42,7 +42,6 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
-      
         ThresholdScore = score + ThresholdScore;
         small = true;
         text = textfield.GetComponent<TextMeshProUGUI>();
@@ -75,6 +74,7 @@ public class ScoreManager : MonoBehaviour
         text.text = currentText.ToString();
         audioSource.clip = currentNarration;
         audioSource.Play();
+        cam.GetComponent<Camera_Movement>().ZoomOut();
     }
     public void IncreaseScore() 
     {
