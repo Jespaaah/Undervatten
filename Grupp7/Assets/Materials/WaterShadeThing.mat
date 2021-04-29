@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterShadeThing
+  m_Shader: {fileID: -6465566751694194690, guid: 18b2a1b45726d9e45b751a7e677c60f8, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: a83bd3f6f4e6fd2478c976dd340d5929, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_0ef18e64e9584b0e87f5d8b8d6160f5d: 0.35
+    - Vector1_117b8b0e7ef042e8b6b91bbe0ab902cb: 1
+    - Vector1_1e1b4d854cef4cabbf4fb96948686b1a: 9.65
+    - Vector1_22cfee968dde4023a9ff53d1b2d427db: 0
+    - Vector1_2ffc1b4afabe462cbd1d89a6fc5bae24: 0.01
+    - Vector1_68d455c4907045e4aa24ab97367f3355: 0.08
+    - Vector1_8b5028c7844b4cb994ae81cb435c9703: 50
+    - Vector1_908384e8ea03448c97e7f1827a74dc1c: 5.01
+    m_Colors:
+    - Color_26eef6749ae443f3a239bd3e8ad2da97: {r: 0.3003204, g: 0.3003204, b: 0.7169812, a: 0.6666667}
+    - Color_3232696206bd424fb8f7caedd6c22a40: {r: 0.1830188, g: 0.39173633, b: 1, a: 0}
+  m_BuildTextureStacks: []
