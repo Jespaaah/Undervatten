@@ -326,6 +326,7 @@ GameObject:
   - component: {fileID: 98297806}
   - component: {fileID: 98297808}
   - component: {fileID: 98297807}
+  - component: {fileID: 98297803}
   m_Layer: 0
   m_Name: Mososarus
   m_TagString: Untagged
@@ -347,6 +348,22 @@ CapsuleCollider:
   m_Height: 13.89622
   m_Direction: 2
   m_Center: {x: -3.3002301e-21, y: 1.3842168e-14, z: -5.9481115}
+--- !u!114 &98297803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98297801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb5355e0849af9447b0147b90127e860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1768807882}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!4 &98297805
 Transform:
   m_ObjectHideFlags: 0
@@ -382,6 +399,7 @@ MonoBehaviour:
   move:
     serializedVersion: 2
     m_Bits: 64
+  scoremanager: {fileID: 0}
 --- !u!54 &98297807
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4140,6 +4158,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1768807882}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!4 &1155953089
 Transform:
   m_ObjectHideFlags: 0
