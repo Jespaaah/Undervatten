@@ -3021,7 +3021,7 @@ MonoBehaviour:
   mediumSize: 2
   mediumText: medium boi
   mediumNarration: {fileID: 8300000, guid: f878e79d38798d6409492591034d28a9, type: 3}
-  bigSpeed: 3000
+  bigSpeed: 300
   bigSize: 3
   bigText: big boi
   bigNarration: {fileID: 8300000, guid: f878e79d38798d6409492591034d28a9, type: 3}

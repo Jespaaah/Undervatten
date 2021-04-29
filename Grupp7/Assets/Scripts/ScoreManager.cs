@@ -74,7 +74,7 @@ public class ScoreManager : MonoBehaviour
         text.text = currentText.ToString();
         audioSource.clip = currentNarration;
         audioSource.Play();
-        cam.GetComponent<Camera_Movement>().ZoomOut();
+        if (!small) { cam.GetComponent<Camera_Movement>().ZoomOut(); }  
     }
     public void IncreaseScore() 
     {
