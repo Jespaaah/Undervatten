@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_WaterEffectTest
+  m_Name: RippleEffect
   m_Shader: {fileID: -6465566751694194690, guid: d4964d1e842c84743a3f23e673a205ae, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -37,9 +37,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_0fc4b4d7102e452e80e4f8be3f736cbc: 10
-    - Vector1_19b82f9a7bdb438caef137c987babe72: 10
-    - Vector1_5a8afd4a916a4e0b8f5db401c345dfe3: 10
-    - Vector1_e54460a835334f35a46876a7ae7c5e34: 1
-    - Vector1_f80694df544548dd8a08a02fb07e39ee: 0.003
+    - Vector1_19b82f9a7bdb438caef137c987babe72: 5
+    - Vector1_5a8afd4a916a4e0b8f5db401c345dfe3: 50
+    - Vector1_e54460a835334f35a46876a7ae7c5e34: 0.125
+    - Vector1_f80694df544548dd8a08a02fb07e39ee: 0.03
     m_Colors: []
   m_BuildTextureStacks: []
