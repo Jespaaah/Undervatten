@@ -21,14 +21,13 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: green
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: f780a2a4528e1e443906da6ce33d5082, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
-  stringTagMap:
-    RenderType: Opaque
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -90,6 +89,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_3b37bb8e2b1c4c0bb858182e1bb3ef63: 0.5
+    - Vector1_81a100aa215746379ac39a795f3b5635: 3.12
+    - Vector1_a02aa885b1004036a8c2177b235dfd76: 2
+    - Vector1_a94b6d6eb9e645a78edeafadd7a02a40: 0.4
+    - Vector1_aabfa47339cf4bbf9fc5059a8b00c706: 10
+    - Vector1_b61022c4e943484aa91f81c738085f66: 1
+    - Vector1_d125ad1cc3724af1a2260e97bcb8e59b: 0.5
+    - Vector1_f366718f88a344028e6a68a859fbb141: 12
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -117,6 +124,11 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Color_30e6cfa436ad4805ad9b61b34880cb8f: {r: 0.14117643, g: 0.8117647, b: 0.16019249, a: 0}
+    - Color_816bbd308f4d4dbe9356b8e7f5eee16b: {r: 0.21236145, g: 0.36862746, b: 0.18039216, a: 0}
+    - Color_8a2ece7aada84bc890879cb014269e0f: {r: 0.18867916, g: 0.18778917, b: 0.18815565, a: 0}
+    - Color_a8f7b95807574e27b21ea6209e803a44: {r: 0.12941176, g: 0.7921569, b: 0.22353971, a: 0}
+    - Vector2_0619248a2d2b4a79b2a2c1b54fe93c81: {r: 1, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 0.19272874, g: 0.5754717, b: 0.2365521, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
