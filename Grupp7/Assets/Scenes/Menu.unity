@@ -505,10 +505,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 753b402012c88644093d51628d4e3ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button:
+  marker:
     serializedVersion: 2
-    m_Bits: 2048
-  fillSpeed: 1
+    m_Bits: 0
+  fillSpeed: 50
   currentValue: 0
   maxValue: 100
   image: {fileID: 1059235210}
@@ -681,7 +681,7 @@ GameObject:
   - component: {fileID: 1124229557}
   m_Layer: 11
   m_Name: Marker
-  m_TagString: Untagged
+  m_TagString: Marker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -756,7 +756,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124229556}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.27, z: 90}
+  m_LocalPosition: {x: 0, y: 1.05, z: 90}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
