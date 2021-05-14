@@ -35,7 +35,7 @@ MonoBehaviour:
     m_Value: 0
   focusDistance:
     m_OverrideState: 1
-    m_Value: 5.89
+    m_Value: 9.5
     min: 0.1
   aperture:
     m_OverrideState: 1
@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   postExposure:
     m_OverrideState: 1
@@ -101,7 +101,7 @@ MonoBehaviour:
     max: 100
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 0.3319255, g: 0.3239231, b: 0.509434, a: 1}
+    m_Value: {r: 0.34425813, g: 0.32936987, b: 0.6792453, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
