@@ -80,6 +80,18 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Triplanar_7b09cfaf216e49c392fb4c4ae7cf61bc_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 39082ed1c9ce842409c03d976da3d7af, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_7b761f07573c40a0a147eef9e5f89206_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 6c8f75cbb244222489c0e0ac6631c392, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_aa3c2e2913a64cb6802099930a0e8a8a_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 1245b4abfc0def246b84a0953966cbec, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -93,6 +105,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_899003f71ee24d4380bdb2401f80bdad: 0.1
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
