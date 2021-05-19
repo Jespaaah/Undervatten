@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[ExecuteInEditMode, ImageEffectAllowedInSceneView]
+//[ExecuteInEditMode, ImageEffectAllowedInSceneView]
 public class UnderWaterEffect : MonoBehaviour
 {
     public Material _mat;
