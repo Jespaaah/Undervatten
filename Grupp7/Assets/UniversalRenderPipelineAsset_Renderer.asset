@@ -34,7 +34,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f43f8b1937c164a41902fde3efd695f2, type: 3}
   m_Name: WaterTest
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   settings:
     Event: 500
     blitMaterial: {fileID: 2100000, guid: 5c542bdbe79be1e47874a35beefefd27, type: 2}
