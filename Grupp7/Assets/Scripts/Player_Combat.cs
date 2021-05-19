@@ -8,6 +8,9 @@ public class Player_Combat : MonoBehaviour
     public float EatRadius = 5;
     public LayerMask edible;
     public GameObject scoreManager;
+    public Animator animator;
+    public ParticleSystem bubles;
+        
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +22,9 @@ public class Player_Combat : MonoBehaviour
     {
         foreach(Collider col in Physics.OverlapSphere(MouthPosition.position, EatRadius, edible))
         {
+            animator.SetTrigger("Eat");
             Destroy(col.gameObject);
+            bubles.Play();
             scoreManager.GetComponent<ScoreManager>().IncreaseScore();
             scoreManager.GetComponent<ScoreManager>().CheckScore();
         } 

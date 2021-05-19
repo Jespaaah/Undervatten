@@ -12,8 +12,9 @@ public class Player_Movement : MonoBehaviour
     public LayerMask move;
     public GameObject scoremanager;
     public bool swim = false;
+    public bool inSea = true;
     public Transform marker;
-    
+    public Transform seaSurface;
     
     void Start()
     {
@@ -23,15 +24,14 @@ public class Player_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(swim)
-        {
-            dir = marker.position - transform.position;
-            dir.Normalize();
-        }
+        if (transform.position.y >= seaSurface.transform.position.y){inSea = false;}
+        else{inSea = true;}
+        if(swim) {dir = marker.position - transform.position; dir.Normalize();}
+        if (!inSea) { rb.isKinematic = false; rb.useGravity = true; }
     }
     private void FixedUpdate()
     {
-        if (swim){Move(dir);}
+        if (swim && inSea){Move(dir);}
     }
     public void Move(Vector3 dir)
     {
