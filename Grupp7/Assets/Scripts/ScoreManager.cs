@@ -70,7 +70,7 @@ public class ScoreManager : MonoBehaviour
     {
         currentSpeed = GetSpeed();
         currentSize = GetSize();
-        hands.localScale = handScaleAtStart * GetSize();
+        //hands.localScale = handScaleAtStart * GetSize();
         currentText = GetText();
         currentNarration = GetNarration();
 

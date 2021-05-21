@@ -36,8 +36,8 @@ public class Player_Movement : MonoBehaviour
     public void Move(Vector3 dir)
     {
        Vector3 realDir = new Vector3(dir.x,dir.y,0);
-       transform.rotation = Quaternion.LookRotation(realDir);
+       rb.rotation = Quaternion.LookRotation(realDir);
 
-        rb.AddForce(realDir * scoremanager.GetComponent<ScoreManager>().currentSpeed * Time.fixedDeltaTime, ForceMode.VelocityChange);
+        rb.AddForce(realDir.normalized * scoremanager.GetComponent<ScoreManager>().currentSpeed * Time.fixedDeltaTime, ForceMode.VelocityChange);
     }
 }
