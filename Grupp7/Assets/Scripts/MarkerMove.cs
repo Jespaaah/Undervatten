@@ -9,7 +9,8 @@ public class MarkerMove : MonoBehaviour
     public LayerMask swimMask;
     public Player_Movement playerMove;
     public float zPos = 0;
-
+    public Transform seaSurface;    
+    public bool InSea = true;
 
     void Update()
     {

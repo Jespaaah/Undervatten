@@ -4175,7 +4175,6 @@ GameObject:
   - component: {fileID: 1341904331}
   - component: {fileID: 1341904330}
   - component: {fileID: 1341904329}
-  - component: {fileID: 1341904328}
   m_Layer: 0
   m_Name: Surface
   m_TagString: Untagged
@@ -4183,19 +4182,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &1341904328
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1341904327}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1341904329
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5313,13 +5299,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1152659325}
     - target: {fileID: 4417263794399780352, guid: 2be4e1028bfe9ce4da5add4a980cbcfb, type: 3}
+      propertyPath: speed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417263794399780352, guid: 2be4e1028bfe9ce4da5add4a980cbcfb, type: 3}
       propertyPath: marker
       value: 
       objectReference: {fileID: 2080055625}
     - target: {fileID: 4417263794399780352, guid: 2be4e1028bfe9ce4da5add4a980cbcfb, type: 3}
+      propertyPath: fallSpeed
+      value: 3000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417263794399780352, guid: 2be4e1028bfe9ce4da5add4a980cbcfb, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4417263794399780352, guid: 2be4e1028bfe9ce4da5add4a980cbcfb, type: 3}
+      propertyPath: seaSurface
+      value: 
+      objectReference: {fileID: 1341904331}
     - target: {fileID: 4417263794399780352, guid: 2be4e1028bfe9ce4da5add4a980cbcfb, type: 3}
       propertyPath: scoremanager
       value: 
@@ -6534,9 +6532,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 892517031}
     - target: {fileID: 851241189876616625, guid: 1e65e76ce3cddf741afad006ca238a69, type: 3}
+      propertyPath: bigSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 851241189876616625, guid: 1e65e76ce3cddf741afad006ca238a69, type: 3}
       propertyPath: textfield
       value: 
       objectReference: {fileID: 746444092}
+    - target: {fileID: 851241189876616625, guid: 1e65e76ce3cddf741afad006ca238a69, type: 3}
+      propertyPath: smallSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 851241189876616625, guid: 1e65e76ce3cddf741afad006ca238a69, type: 3}
+      propertyPath: mediumSpeed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 851241189876616626, guid: 1e65e76ce3cddf741afad006ca238a69, type: 3}
       propertyPath: m_Name
       value: Scoremanager
