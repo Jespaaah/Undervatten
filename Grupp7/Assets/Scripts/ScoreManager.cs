@@ -112,9 +112,9 @@ public class ScoreManager : MonoBehaviour
     }
     public float GetEatRadius()
     {
-        if (small) { return 2; }
-        if (medium) { return 4; }
-        if (big) { return 6; }
+        if (small) { return 3; }
+        if (medium) { return 5; }
+        if (big) { return 7; }
         else { return 0; }
     }
 }
