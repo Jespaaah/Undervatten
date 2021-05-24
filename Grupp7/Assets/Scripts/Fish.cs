@@ -10,6 +10,7 @@ public class Fish : MonoBehaviour
     public LayerMask fishDetectionLayer;
     public Vector3 runAwayDir;
     public bool swimAway = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +33,7 @@ public class Fish : MonoBehaviour
     private void FixedUpdate()
     {
         if (swimAway) { SwimAway(); }
+        transform.rotation = Quaternion.LookRotation(runAwayDir);
     }
     public void SwimAway()
     {
