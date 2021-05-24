@@ -36,8 +36,6 @@ public class ScoreManager : MonoBehaviour
     public float currentSize;
     public string currentText;
     public AudioClip currentNarration;
-    public Transform hands;
-    public Vector3 handScaleAtStart;
    
     
     // Start is called before the first frame update
@@ -48,7 +46,6 @@ public class ScoreManager : MonoBehaviour
         small = true;
         text = textfield.GetComponent<TextMeshProUGUI>();
         audioSource = GetComponent<AudioSource>();
-        handScaleAtStart = hands.localScale;
         LevelUp();
     }
    
@@ -70,7 +67,6 @@ public class ScoreManager : MonoBehaviour
     {
         currentSpeed = GetSpeed();
         currentSize = GetSize();
-        //hands.localScale = handScaleAtStart * GetSize();
         currentText = GetText();
         currentNarration = GetNarration();
 
