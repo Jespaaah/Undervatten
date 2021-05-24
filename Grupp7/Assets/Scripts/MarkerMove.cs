@@ -8,11 +8,12 @@ public class MarkerMove : MonoBehaviour
     public float radius = 1f;
     public LayerMask swimMask;
     public Player_Movement playerMove;
+    public float zPos = 0;
 
 
     void Update()
     {
-        Vector3 markerDestination = new Vector3(rHand.position.x, rHand.position.y, 0);
+        Vector3 markerDestination = new Vector3(rHand.position.x, rHand.position.y, zPos);
         transform.position = markerDestination;
     }
 

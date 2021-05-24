@@ -15,7 +15,7 @@ public class Button : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentValue = 0;
     }
 
     // Update is called once per frame

@@ -27,7 +27,7 @@ public class Bar : MonoBehaviour
         else { submerged = false; }
         if (!submerged) { Increase(); }
         if (submerged) { Decrease(); }
-        if (currentValue >= maxValue) { GoToMenu(); }
+        if (currentValue <= 0) { GoToMenu(); }
     }
    void Increase()
     {

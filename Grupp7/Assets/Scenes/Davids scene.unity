@@ -4737,6 +4737,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446940976}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!198 &1449983899 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1995139325095461630, guid: 2be4e1028bfe9ce4da5add4a980cbcfb, type: 3}
+  m_PrefabInstance: {fileID: 1803072272}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1461615569 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7229953620657734111, guid: 031c7de4c7a195c418104ba2d8ffc512, type: 3}
@@ -5367,6 +5372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mosasaurus
       objectReference: {fileID: 0}
+    - target: {fileID: 4417263794399780382, guid: 2be4e1028bfe9ce4da5add4a980cbcfb, type: 3}
+      propertyPath: bubbles
+      value: 
+      objectReference: {fileID: 1449983899}
     - target: {fileID: 4417263794399780382, guid: 2be4e1028bfe9ce4da5add4a980cbcfb, type: 3}
       propertyPath: scoreManager
       value: 
