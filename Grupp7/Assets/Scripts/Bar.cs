@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 using UnityEngine.UI;
 
@@ -26,6 +27,7 @@ public class Bar : MonoBehaviour
         else { submerged = false; }
         if (!submerged) { Increase(); }
         if (submerged) { Decrease(); }
+        if (currentValue >= maxValue) { GoToMenu(); }
     }
    void Increase()
     {
@@ -36,5 +38,9 @@ public class Bar : MonoBehaviour
     {
         currentValue -= lossPerSec * Time.deltaTime;
         bar.fillAmount = currentValue / maxValue;
+    }
+    void GoToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

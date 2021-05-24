@@ -36,6 +36,7 @@ public class ScoreManager : MonoBehaviour
     public float currentSize;
     public string currentText;
     public AudioClip currentNarration;
+    
    
     
     // Start is called before the first frame update
@@ -69,6 +70,7 @@ public class ScoreManager : MonoBehaviour
         currentSize = GetSize();
         currentText = GetText();
         currentNarration = GetNarration();
+        player.GetComponent<Player_Combat>().EatRadius = GetEatRadius();
 
         player.transform.localScale = new Vector3(currentSize,currentSize,currentSize);
         text.text = currentText.ToString();
@@ -107,5 +109,12 @@ public class ScoreManager : MonoBehaviour
         if (medium) { return mediumNarration; }
         if (big) { return bigNarration; }
         else { return null; }
+    }
+    public float GetEatRadius()
+    {
+        if (small) { return 2; }
+        if (medium) { return 4; }
+        if (big) { return 6; }
+        else { return 0; }
     }
 }
