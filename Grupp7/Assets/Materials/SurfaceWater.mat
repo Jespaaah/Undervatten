@@ -39,16 +39,16 @@ Material:
     - Vector1_2ffc1b4afabe462cbd1d89a6fc5bae24: 0.02
     - Vector1_317f7864081e4c649f87f00e2519c653: 10
     - Vector1_8d69cb6431bd4b28be0b25cfb081e8f3: 1
-    - Vector1_908384e8ea03448c97e7f1827a74dc1c: 76.89
+    - Vector1_908384e8ea03448c97e7f1827a74dc1c: 211.33
     - Vector1_9258573918134c728fe0cf48dafd293c: 0.08
     - Vector1_a2d00523dc144c4bbed9bf27ceac83ce: 200
     - Vector1_e9a60472a6274a729016f4a848feafd7: 2
-    - Vector1_ebb25f830a424490b74fb5e605f003ca: 5
-    - Vector1_ebb25f830a424490b74fb5e605f003ca_1: 16.45
+    - Vector1_ebb25f830a424490b74fb5e605f003ca: 10
+    - Vector1_ebb25f830a424490b74fb5e605f003ca_1: 2
     m_Colors:
-    - Color_26eef6749ae443f3a239bd3e8ad2da97: {r: 0.14901961, g: 0.37647063, b: 0.5803922, a: 1}
-    - Color_3232696206bd424fb8f7caedd6c22a40: {r: 0.3813261, g: 0.5520116, b: 1, a: 1}
-    - Color_a9972b7ea4b043258399dd7ade725aff: {r: 0.14901957, g: 0.3764706, b: 0.5803921, a: 0.6392157}
+    - Color_26eef6749ae443f3a239bd3e8ad2da97: {r: 0, g: 0.20784315, b: 0.4784314, a: 1}
+    - Color_3232696206bd424fb8f7caedd6c22a40: {r: 0.14047159, g: 0.20336935, b: 0.36900002, a: 1}
+    - Color_a9972b7ea4b043258399dd7ade725aff: {r: 0.24697402, g: 0.4848474, b: 0.6981132, a: 0.6392157}
     - Color_d779d074f2234a3e8cefc49c0b0c785b: {r: 0.9098039, g: 0.9847354, b: 1, a: 1}
-    - Color_e3c03c2609e74c11b65477ae76906306: {r: 0.115699545, g: 0.18291469, b: 0.3773585, a: 0.45490196}
+    - Color_e3c03c2609e74c11b65477ae76906306: {r: 0, g: 0.20784315, b: 0.4784314, a: 1}
   m_BuildTextureStacks: []
