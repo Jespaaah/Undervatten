@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class Bar : MonoBehaviour
 {
     public float lossPerSec = 1;
+    public float gainPerSec = 30;
     public float currentValue = 1;
     public float maxValue;
     public Image bar;
@@ -31,7 +32,7 @@ public class Bar : MonoBehaviour
     }
    void Increase()
     {
-        currentValue += lossPerSec * Time.deltaTime;
+        currentValue += gainPerSec * Time.deltaTime;
         bar.fillAmount = currentValue / maxValue;
     } 
     void Decrease()
