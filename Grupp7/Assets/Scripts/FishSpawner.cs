@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class FishSpawner : MonoBehaviour
 {
-    public GameObject fish;
+    public GameObject fish,fishCounter;
     public float cooldown;
     public float time,currentTime,desiredTime;
+    public FishCounter FS;
     // Start is called before the first frame update
     void Start()
     {
+        FS = fishCounter.GetComponent<FishCounter>();
         Timer();
     }
 
@@ -17,7 +19,12 @@ public class FishSpawner : MonoBehaviour
     void Update()
     {
         time = Time.time;
-        if (time >= desiredTime ) { Instantiate(fish,transform.position,transform.rotation); Timer(); }
+        if (time >= desiredTime && FS.amountOfFishAlive < FS.maxAmountOfFishAlive ) 
+        { 
+            Instantiate(fish,transform.position,transform.rotation);
+            FS.AddFish();
+            Timer();
+        }
     }
 public void Timer()
     {
