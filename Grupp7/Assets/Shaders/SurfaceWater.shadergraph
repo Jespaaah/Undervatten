@@ -4207,7 +4207,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "7c5ec4f61e1a4bae8b509d608087782e",
     "m_Id": 0,
-    "m_DisplayName": "WhiteDensity",
+    "m_DisplayName": "RippleDensity",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -4677,7 +4677,7 @@
     "m_Guid": {
         "m_GuidSerialized": "154b95ac-fc22-4381-aff4-c88edc6293d2"
     },
-    "m_Name": "WhiteDensity",
+    "m_Name": "RippleDensity",
     "m_DefaultReferenceName": "Vector1_908384e8ea03448c97e7f1827a74dc1c",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
