@@ -7,6 +7,6 @@ public class HandCheck : MonoBehaviour
     public GameObject hand_L, hand_R;
     void Update()
     {
-        if (hand_L.activeSelf == true && hand_R.activeSelf == true) { SceneManager.LoadScene(0); }
+        if (hand_L.activeSelf == false && hand_R.activeSelf == false) { SceneManager.LoadScene(0); }
     }
 }

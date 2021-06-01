@@ -40,21 +40,21 @@ public class Button : MonoBehaviour
         Debug.Log("Emptying");
         currentValue = 0;
     }
-    private void OnTriggerStay(Collider other)
-    {
+    //private void OnTriggerStay(Collider other)
+    //{
       
-        if(other.gameObject.tag == "Marker")
-        {
-            Debug.Log(other.name);
-            active = true;
-        }
-        else { active = false; }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "Marker")
-        {
-            active = false;
-        }
-    }
+    //    if(other.gameObject.tag == "Marker")
+    //    {
+    //        Debug.Log(other.name);
+    //        active = true;
+    //    }
+    //    else { active = false; }
+    //}
+    //private void OnTriggerExit(Collider other)
+    //{
+    //    if (other.gameObject.tag == "Marker")
+    //    {
+    //        active = false;
+    //    }
+    //}
 }
