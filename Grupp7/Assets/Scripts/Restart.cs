@@ -11,7 +11,7 @@ public class Restart : MonoBehaviour
     public float gainPerSec = 30;
     public float currentValue = 1;
     public float maxValue;
-    public Image bar;
+    public Image bar, frame;
     public TextMeshProUGUI text;
     public GameObject hand_L,hand_R,G_Text;
     public bool restarting = false;
@@ -20,6 +20,7 @@ public class Restart : MonoBehaviour
     void Start()
     {
         bar = GetComponent<Image>();
+        
         currentValue = 0;
         text = G_Text.GetComponent<TextMeshProUGUI>();    
     }
@@ -29,8 +30,8 @@ public class Restart : MonoBehaviour
     {
         if (hand_L.activeSelf == false && hand_R.activeSelf == false) { restarting = true; }
         else { restarting = false; }
-        if (restarting) { Increase(); text.enabled = true; }
-        if (!restarting) { Decrease(); text.enabled = false; }
+        if (restarting) { Increase(); text.enabled = true; frame.enabled = true; }
+        if (!restarting) { Decrease(); text.enabled = false; frame.enabled = false; }
         if (currentValue >= maxValue) { GoToMenu(); }
     }
     void Increase()
