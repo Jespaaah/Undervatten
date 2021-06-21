@@ -16,6 +16,8 @@ public class ScoreManager : MonoBehaviour
     public GameObject textfield;
     public TextMeshProUGUI text;
     public AudioSource audioSource;
+    public TextMeshProUGUI gameOverText;
+    public string gameOverString;
     [Header("Small")]
     public float smallSpeed;
     public float smallSize;
@@ -49,7 +51,14 @@ public class ScoreManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         LevelUp();
     }
-   
+
+    private void Update()
+    {
+        if (GetSize() == bigSize)
+        {
+            GameIsOver();
+        }
+    }
     public void CheckScore()
     {
         
@@ -116,5 +125,10 @@ public class ScoreManager : MonoBehaviour
         if (medium) { return 5; }
         if (big) { return 7; }
         else { return 0; }
+    }
+    public void GameIsOver()
+    {
+        gameOverText.enabled = true;
+        gameOverText.text = gameOverString;
     }
 }
