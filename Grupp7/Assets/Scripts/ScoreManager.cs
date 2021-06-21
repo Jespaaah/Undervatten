@@ -54,7 +54,7 @@ public class ScoreManager : MonoBehaviour
 
     private void Update()
     {
-        if (GetSize() == bigSize)
+        if (big == true)
         {
             GameIsOver();
         }
@@ -128,7 +128,6 @@ public class ScoreManager : MonoBehaviour
     }
     public void GameIsOver()
     {
-        gameOverText.enabled = true;
         gameOverText.text = gameOverString;
     }
 }
